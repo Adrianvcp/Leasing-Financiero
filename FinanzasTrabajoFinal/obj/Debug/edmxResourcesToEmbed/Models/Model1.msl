@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bdFinanzasModelStoreContainer" CdmEntityContainer="bdFinanzasEntities8">
+    <EntitySetMapping Name="Administradors">
+      <EntityTypeMapping TypeName="bdFinanzasModel.Administrador">
+        <MappingFragment StoreEntitySet="Administrador">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bancoes">
+      <EntityTypeMapping TypeName="bdFinanzasModel.Banco">
+        <MappingFragment StoreEntitySet="Banco">
+          <ScalarProperty Name="idBanco" ColumnName="idBanco" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="NombreBanco" ColumnName="NombreBanco" />
+          <ScalarProperty Name="TEA" ColumnName="TEA" />
+          <ScalarProperty Name="SeguroRiesgo" ColumnName="SeguroRiesgo" />
+          <ScalarProperty Name="PorRecompa" ColumnName="PorRecompa" />
+          <ScalarProperty Name="costesNotariales" ColumnName="costesNotariales" />
+          <ScalarProperty Name="costesRegistrales" ColumnName="costesRegistrales" />
+          <ScalarProperty Name="Tasacion" ColumnName="Tasacion" />
+          <ScalarProperty Name="comEstudio" ColumnName="comEstudio" />
+          <ScalarProperty Name="comActivacion" ColumnName="comActivacion" />
+          <ScalarProperty Name="comPeriodica" ColumnName="comPeriodica" />
+          <ScalarProperty Name="PorsegRiesgo" ColumnName="PorsegRiesgo" />
+          <ScalarProperty Name="ks" ColumnName="ks" />
+          <ScalarProperty Name="wacc" ColumnName="wacc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Banco_Promocion">
+      <EntityTypeMapping TypeName="bdFinanzasModel.Banco_Promocion">
+        <MappingFragment StoreEntitySet="Banco_Promocion">
+          <ScalarProperty Name="Banco_idBanco" ColumnName="Banco_idBanco" />
+          <ScalarProperty Name="Promocion_idPromocion" ColumnName="Promocion_idPromocion" />
+          <ScalarProperty Name="carro_idCarro" ColumnName="carro_idCarro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="carroes">
+      <EntityTypeMapping TypeName="bdFinanzasModel.carro">
+        <MappingFragment StoreEntitySet="carro">
+          <ScalarProperty Name="idCarro" ColumnName="idCarro" />
+          <ScalarProperty Name="NCarro" ColumnName="NCarro" />
+          <ScalarProperty Name="idMarca" ColumnName="idMarca" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="bdFinanzasModel.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Frecuencias">
+      <EntityTypeMapping TypeName="bdFinanzasModel.Frecuencia">
+        <MappingFragment StoreEntitySet="Frecuencia">
+          <ScalarProperty Name="idFrecuencia" ColumnName="idFrecuencia" />
+          <ScalarProperty Name="NNombre" ColumnName="NNombre" />
+          <ScalarProperty Name="cantidadDias" ColumnName="cantidadDias" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="leasings">
+      <EntityTypeMapping TypeName="bdFinanzasModel.leasing">
+        <MappingFragment StoreEntitySet="leasing">
+          <ScalarProperty Name="idLeasing" ColumnName="idLeasing" />
+          <ScalarProperty Name="idCarro" ColumnName="idCarro" />
+          <ScalarProperty Name="idDNI" ColumnName="idDNI" />
+          <ScalarProperty Name="idBanco" ColumnName="idBanco" />
+          <ScalarProperty Name="NprevioVenta" ColumnName="NprevioVenta" />
+          <ScalarProperty Name="NcuotaInical" ColumnName="NcuotaInical" />
+          <ScalarProperty Name="NAnios" ColumnName="NAnios" />
+          <ScalarProperty Name="fechaInicio" ColumnName="fechaInicio" />
+          <ScalarProperty Name="idFrecuencia" ColumnName="idFrecuencia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marcas">
+      <EntityTypeMapping TypeName="bdFinanzasModel.Marca">
+        <MappingFragment StoreEntitySet="Marca">
+          <ScalarProperty Name="idMarca" ColumnName="idMarca" />
+          <ScalarProperty Name="nMarca" ColumnName="nMarca" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlazoGracias">
+      <EntityTypeMapping TypeName="bdFinanzasModel.PlazoGracia">
+        <MappingFragment StoreEntitySet="PlazoGracia">
+          <ScalarProperty Name="idPlazoGracia" ColumnName="idPlazoGracia" />
+          <ScalarProperty Name="NNombre" ColumnName="NNombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Promocions">
+      <EntityTypeMapping TypeName="bdFinanzasModel.Promocion">
+        <MappingFragment StoreEntitySet="Promocion">
+          <ScalarProperty Name="idPromocion" ColumnName="idPromocion" />
+          <ScalarProperty Name="fechaInicio" ColumnName="fechaInicio" />
+          <ScalarProperty Name="fechaFin" ColumnName="fechaFin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="bdFinanzasModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="idDNI" ColumnName="idDNI" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="NNombre" ColumnName="NNombre" />
+          <ScalarProperty Name="NApellido" ColumnName="NApellido" />
+          <ScalarProperty Name="Ntipo" ColumnName="Ntipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nameBancoes">
+      <EntityTypeMapping TypeName="bdFinanzasModel.nameBanco">
+        <MappingFragment StoreEntitySet="nameBanco">
+          <ScalarProperty Name="idBanco" ColumnName="idBanco" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="NombreBanco" ColumnName="NombreBanco" />
+          <ScalarProperty Name="TEA" ColumnName="TEA" />
+          <ScalarProperty Name="SeguroRiesgo" ColumnName="SeguroRiesgo" />
+          <ScalarProperty Name="PorRecompa" ColumnName="PorRecompa" />
+          <ScalarProperty Name="costesNotariales" ColumnName="costesNotariales" />
+          <ScalarProperty Name="costesRegistrales" ColumnName="costesRegistrales" />
+          <ScalarProperty Name="Tasacion" ColumnName="Tasacion" />
+          <ScalarProperty Name="comEstudio" ColumnName="comEstudio" />
+          <ScalarProperty Name="comActivacion" ColumnName="comActivacion" />
+          <ScalarProperty Name="comPeriodica" ColumnName="comPeriodica" />
+          <ScalarProperty Name="PorsegRiesgo" ColumnName="PorsegRiesgo" />
+          <ScalarProperty Name="ks" ColumnName="ks" />
+          <ScalarProperty Name="wacc" ColumnName="wacc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwCarroes">
+      <EntityTypeMapping TypeName="bdFinanzasModel.vwCarro">
+        <MappingFragment StoreEntitySet="vwCarro">
+          <ScalarProperty Name="idCarro" ColumnName="idCarro" />
+          <ScalarProperty Name="NCarro" ColumnName="NCarro" />
+          <ScalarProperty Name="idMarca" ColumnName="idMarca" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

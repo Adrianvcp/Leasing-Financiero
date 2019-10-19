@@ -1,0 +1,78 @@
+﻿@model IEnumerable<FinanzasTrabajoFinal.Models.Banco>
+
+@{
+    ViewBag.Title = "Banco Page";
+    var estado = (Int32)Session["estado"];
+}
+
+<body class="tm-dark-bg">
+
+    <section class="tm-dark-bg text-center">
+        <div class="py-5">
+            <div class="container">
+                <div class="row">
+
+                    @{
+                        foreach (var item in Model)
+                        {
+                            using (Html.BeginForm("Index", "Home"))
+                            {
+                                <div class="margin-top-50 col-md-4">
+                                    <div class="card mb-4 shadow-sm">
+                                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" style="height: 225px; width: 100%; display: block;" src="~/images/logos/bcp.png" data-holder-rendered="true">
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;color:white">
+                                                        @item.NombreBanco -
+                                                    </font>
+                                                    <font style="vertical-align: inherit;color:white">
+                                                        @item.TEA%
+                                                    </font>
+                                                </font>
+                                            </p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    @*<input type="submit" value="Editar" />*@
+                                                    @Html.ActionLink("Editar", "Edit", new { id = @item.idBanco }) / @Html.ActionLink("Borrar", "Delete", new { id = @item.idBanco })
+
+                                                </div>
+                                                <small class="text-muted"><font style="vertical-align: inherit;"></font></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    }
+                    @if (estado == 2)
+                    {
+                        <div class="margin-top-50 col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <font style="vertical-align: inherit;">
+                                            <div style="margin-top:80px">
+                                                @Html.ActionLink("Agregar", "Create")
+                                            </div>
+                                        </font>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+</body>

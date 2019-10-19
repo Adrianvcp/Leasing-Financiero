@@ -1,0 +1,330 @@
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\ApplicationInsights.config
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\roslyn\csc.exe
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\roslyn\vbc.exe
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\roslyn\VBCSCompiler.exe
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\FinanzasTrabajoFinal.dll.config
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\FinanzasTrabajoFinal.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\FinanzasTrabajoFinal.pdb
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Antlr3.Runtime.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\EntityFramework.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\EntityFramework.SqlServer.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AI.Web.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.ApplicationInsights.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Newtonsoft.Json.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Owin.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\System.Web.Helpers.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\System.Web.Mvc.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\System.Web.Optimization.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\System.Web.Razor.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\System.Web.WebPages.Deployment.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\System.Web.WebPages.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\System.Web.WebPages.Razor.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\WebGrease.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AI.Web.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.ApplicationInsights.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\System.Web.Helpers.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\System.Web.Mvc.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\System.Web.Optimization.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\System.Web.Razor.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\System.Web.WebPages.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\System.Web.WebPages.Deployment.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\System.Web.WebPages.Razor.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Antlr3.Runtime.pdb
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Newtonsoft.Json.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\EntityFramework.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\EntityFramework.SqlServer.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\obj\Debug\FinanzasTrabajoFinal.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\obj\Debug\FinanzasTrabajoFinal.pdb
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal\FinanzasTrabajoFinal\obj\Debug\FinanzasTrabajoFinal.csprojResolveAssemblyReference.cache
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\ApplicationInsights.config
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\csc.exe
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\vbc.exe
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\VBCSCompiler.exe
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\FinanzasTrabajoFinal.dll.config
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\FinanzasTrabajoFinal.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\FinanzasTrabajoFinal.pdb
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Antlr3.Runtime.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\EntityFramework.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\EntityFramework.SqlServer.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.Web.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.ApplicationInsights.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Newtonsoft.Json.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Owin.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Helpers.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Mvc.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Optimization.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Razor.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.Deployment.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.Razor.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\WebGrease.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.Web.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.ApplicationInsights.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Helpers.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Mvc.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Optimization.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Razor.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.Deployment.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.Razor.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Antlr3.Runtime.pdb
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Newtonsoft.Json.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\EntityFramework.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\EntityFramework.SqlServer.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\obj\Debug\FinanzasTrabajoFinal.csprojResolveAssemblyReference.cache
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\obj\Debug\FinanzasTrabajoFinal.dll
+C:\Users\adrian\Desktop\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\obj\Debug\FinanzasTrabajoFinal.pdb
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\ApplicationInsights.config
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\csc.exe
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\vbc.exe
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\VBCSCompiler.exe
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\FinanzasTrabajoFinal.dll.config
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\FinanzasTrabajoFinal.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\FinanzasTrabajoFinal.pdb
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Antlr3.Runtime.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\EntityFramework.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\EntityFramework.SqlServer.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.Web.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.ApplicationInsights.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Newtonsoft.Json.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Owin.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Helpers.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Mvc.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Optimization.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Razor.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.Deployment.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.Razor.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\WebGrease.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.Web.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.ApplicationInsights.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Helpers.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Mvc.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Optimization.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Razor.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.Deployment.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.Razor.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Antlr3.Runtime.pdb
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Newtonsoft.Json.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\EntityFramework.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\EntityFramework.SqlServer.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\obj\Debug\FinanzasTrabajoFinal.csprojAssemblyReference.cache
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\obj\Debug\FinanzasTrabajoFinal.csproj.CoreCompileInputs.cache
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\obj\Debug\FinanzasTrabajoFinal.csproj.CopyComplete
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\obj\Debug\FinanzasTrabajoFinal.dll
+C:\Users\alvaro\Documents\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\obj\Debug\FinanzasTrabajoFinal.pdb
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\ApplicationInsights.config
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\csc.exe
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\vbc.exe
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\VBCSCompiler.exe
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\FinanzasTrabajoFinal.dll.config
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\FinanzasTrabajoFinal.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\FinanzasTrabajoFinal.pdb
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Antlr3.Runtime.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\EntityFramework.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\EntityFramework.SqlServer.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.Web.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.ApplicationInsights.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Newtonsoft.Json.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Owin.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Helpers.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Mvc.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Optimization.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Razor.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.Deployment.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.Razor.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\WebGrease.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.Web.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.ApplicationInsights.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Helpers.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Mvc.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Optimization.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.Razor.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.Deployment.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\System.Web.WebPages.Razor.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Antlr3.Runtime.pdb
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Newtonsoft.Json.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\EntityFramework.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\EntityFramework.SqlServer.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\obj\Debug\FinanzasTrabajoFinal.csprojResolveAssemblyReference.cache
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\obj\Debug\FinanzasTrabajoFinal.dll
+C:\Users\adrian\Documents\TF_Finanzas\FinanzasTrabajoFinal - Copy\FinanzasTrabajoFinal\obj\Debug\FinanzasTrabajoFinal.pdb

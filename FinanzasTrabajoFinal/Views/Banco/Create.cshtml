@@ -1,0 +1,135 @@
+﻿@model IEnumerable<FinanzasTrabajoFinal.Models.Banco>
+
+@{ 
+    var iduser = Session["idUser"];
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="~/css/style.css" rel='stylesheet' type='text/css' media="all">
+
+</head>
+<body class="fondo-negro">
+
+    <h1 class="header-w3ls">
+        Crear Banco
+    </h1>z
+
+    @using (Html.BeginForm("Create", "Banco"))
+    {
+        <div class="container">
+            <div class="main-bothside">
+                <form action="#" method="post">
+
+                    <link href="~/css/jquery-ui.css" rel="stylesheet" />
+
+
+                    <div class="form-mid-w3ls" style="display:none;">
+                        <p>idUser</p>
+                        @Html.TextBox("idUser", "", new { @placeholder = iduser })
+                    </div>
+                    <div class="form-mid-w3ls">
+                        <p>Nombre de Banco</p>
+                        @Html.TextBox("nB", "", new { @placeholder = "Nombre Entidad F." })
+                    </div>
+                    <div class="form-mid-w3ls">
+                        <p>TEA</p>
+                        @Html.TextBox("tea", "", new { @placeholder = "TEA" })
+                    </div>
+                    <div class="form-mid-w3ls">
+                        <p>Seguro de Riesgo</p>
+                        @Html.TextBox("sr", "", new { @placeholder = "Seguro Riesgo" })
+                    </div>
+                    <div class="form-mid-w3ls">
+                        <p>Porcentaje de Recompra</p>
+                        @Html.TextBox("pRecom", "", new { @placeholder = "Recompra(%)" })
+                    </div>
+                    <div class="form-mid-w3ls">
+                        <p>Costes Notariales</p>
+                        @Html.TextBox("cN", "", new { @placeholder = "Costes Notariales" })
+                    </div>
+                    <div class="form-mid-w3ls">
+                        <p>Costes Registrales</p>
+                        @Html.TextBox("cR", "", new { @placeholder = "Costes Registrales" })
+                    </div>
+                    <div class="form-mid-w3ls">
+                        <p>Tasacion</p>
+                        @Html.TextBox("tasa", "", new { @placeholder = "Tasacion" })
+                    </div>
+                    <div class="form-mid-w3ls">
+                        <p>Comision Estudios</p>
+                        @Html.TextBox("cEstu", "", new { @placeholder = "Comision Estudios" })
+                    </div>
+                    <div class="form-mid-w3ls">
+                        <p>Comision Activacion</p>
+                        @Html.TextBox("cActi", "", new { @placeholder = "Coste Activacion" })
+                    </div>
+                    <div class="form-mid-w3ls">
+                        <p>Comision Periodica</p>
+                        @Html.TextBox("cPerio", "", new { @placeholder = "Riesgo" })
+                    </div>
+                    <div class="form-mid-w3ls">
+                        <p>Riesgo</p>
+                        @Html.TextBox("pRiesgo", "", new { @placeholder = "Riesgo" })
+                    </div>
+                    <div class="form-mid-w3ls">
+                        <p>K.S</p>
+                        @Html.TextBox("ks", "", new { @placeholder = "K.S." })
+                    </div>
+                    <div class="form-mid-w3ls">
+                        <p>Wacc</p>
+                        @Html.TextBox("wacc", "", new { @placeholder = "WACC" })
+                    </div>
+
+                    <input type="submit" value="Agregar Entidad Financiera" />
+                </form>
+            </div>
+        </div>
+    }
+
+
+    <script>
+        $("#number").on({
+            "focus": function (event) {
+                $(event.target).select();
+            },
+            "keyup": function (event) {
+                $(event.target).val(function (index, value) {
+                    return value.replace(/\D/g, "")
+                                .replace(/([0-9])([0-9]{2})$/, '$1.$2')
+                                .replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ",");
+                });
+            }
+        });
+    </script>
+
+    <script>
+        $("#number").on({
+            "focus": function (event) {
+                $(event.target).select();
+            },
+            "keyup": function (event) {
+                $(event.target).val(function (index, value) {
+                    return value.replace(/\D/g, "")
+                                .replace(/([0-9])([0-9]{2})$/, '$1.$2')
+                                .replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ",");
+                });
+            }
+        });
+    </script>
+
+    <script>
+        function vamoMierda () {
+            document.getElementById("demo").innerHTML = "Hello World";
+            }
+    </script>
+
+
+
+
+</body>
+</html>

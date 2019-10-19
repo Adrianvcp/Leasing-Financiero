@@ -1,0 +1,96 @@
+﻿@{ 
+
+    var tipo = 0; //0 = User; //1 = Admin
+    var estado = (Int32)Session["estado"];  // 0 = Principal 2= loginCorrectoAdmin 1= loginCorectoUser
+    var user = Session["userName"];
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leasing UPC</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="~/css/main.css"/>
+   
+        <meta charset="UTF-8">
+        <title>FinanzasUpc</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+        <link href="~/css/font-awesome.min.css" rel="stylesheet"> <!-- FontAwesome Icons -->
+        <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href= "@Url.Content("~/css/templatemo_style.css")" rel="stylesheet" type="text/css">
+
+        @Scripts.Render("~/js/jquery-1.11.1.min.js")    
+        @Styles.Render("~/css/templatemo_style.css")
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/js/templatemo_script.js")
+
+
+    </head>
+    <body>
+
+        <div id="responsive-menu">
+            <ul class="menu-holder">
+                   <li><a href="@Url.Action("Index","Home")"><i class="fa fa-home"></i>Home</a></li>
+                   <li><a href="@Url.Action("Index","Login")"><i class="fa fa-cogs"></i>Log In</a></li>
+                
+                    <li><a href="@Url.Action("Index","Login")"><i class="fa fa-cogs"></i>Log In</a></li>
+        
+                
+            </ul>
+        </div>
+        <div class="templatemo-header tm-orange-bg-transparent">
+            <div class="templatemo-header-inner">
+                <div class="container">
+                    <h1 class="templatemo-logo text-uppercase pull-left">FinanzasUPC</h1>
+                    <nav class="hidden-xs templatemo-nav pull-right text-uppercase">
+                        <ul class="menu-holder">
+
+                            @switch (estado)
+                            {
+                                case 0:
+                                    <li><a href="@Url.Action("Index","Home")"><i class="fa fa-home"></i>Home</a></li>
+                                    <li><a href="@Url.Action("Index","Login")"><i class="fa fa-cogs"></i>Log In</a></li>
+                                    <li><a href="@Url.Action("Index","Registro")"><i class="fa fa-cogs"></i>Registro</a></li>
+                                    break;
+                                case 1:
+
+                                    <li><a href="@Url.Action("Index","Carros")"><i class="fa fa-home"></i>Carros</a></li>
+                                    <li><a href="@Url.Action("Index","Leasing")"><i class="fa fa-cogs"></i>Simulador Leasing</a></li>
+                                    <li><a href="@Url.Action("CerrarSesion","Home")"><i class="fa fa-cogs"></i>Salir</a></li>
+
+                                    break;
+                                case 2:
+                                    <li><a href="@Url.Action("Index","Carros")"><i class="fa fa-home"></i>Carros</a></li>
+                                    <li><a href="@Url.Action("Index","Banco")"><i class="fa fa-cogs"></i>Bancos</a></li>
+                                    <li><a href="@Url.Action("Index","Leasing")"><i class="fa fa-cogs"></i>Simulador Leasing</a></li>
+                    
+                                    <li><a href="@Url.Action("CerrarSesion", "Home")"><i class="fa fa-cogs"></i>Salir</a></li>
+                                    break;
+                                default:
+                                    break;
+                            }
+
+                        </ul>
+                        <div style="margin-top:10px">
+                            @user 
+                        </div>
+                    </nav>
+                </div>
+            </div> <!-- templatemo-header-inner -->
+        </div> <!-- templatemo-header -->
+
+
+        <div class="body-content">
+            @RenderBody()
+
+        </div>
+
+        @RenderSection("scripts", required: false)
+        @RenderSection("css", required: false)
+        @RenderSection("styles", required: false)
+    </body>
+</html>

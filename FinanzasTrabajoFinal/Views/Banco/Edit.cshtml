@@ -1,0 +1,132 @@
+﻿@model FinanzasTrabajoFinal.Models.Banco
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table V04</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/table/util.css">
+    <link rel="stylesheet" type="text/css" href="~/css/table/main.css">
+    <!--===============================================================================================-->
+
+</head>
+<body class="tm-dark-bg">
+
+
+    <div class="tm-dark-bg">
+        <div class="container">
+            <div class="main-bothside">
+                @using (Html.BeginForm())
+                {
+                    <form action="#" method="post">
+
+                        <div class="form-mid-w3ls" style="display:none;"><p>idBanco</p>
+                            @Html.TextBoxFor(m => m.idBanco)
+                        </div>
+                        <div class="form-mid-w3ls" style="display:none;">
+                            <p>idUser</p>
+                            @Html.TextBoxFor(m => m.idUsuario)
+                        </div>
+                        <div class="form-mid-w3ls">
+                            <p>Nombre de Banco</p>
+                            @Html.TextBoxFor(m => m.NombreBanco)
+                        </div>
+                        <div class="form-mid-w3ls">
+                            <p>TEA</p>
+                            @Html.TextBoxFor(m => m.TEA)
+                        </div>
+                        <div class="form-mid-w3ls">
+                            <p>Seguro de Riesgo</p>
+                            @Html.TextBoxFor(m => m.SeguroRiesgo)
+                        </div>
+                        <div class="form-mid-w3ls">
+                            <p>Porcentaje de Recompra</p>
+                            @Html.TextBoxFor(m => m.PorRecompa)
+                        </div>
+                        <div class="form-mid-w3ls">
+                            <p>Costes Notariales</p>
+                            @Html.TextBoxFor(m => m.costesNotariales)
+                        </div>
+                        <div class="form-mid-w3ls">
+                            <p>Costes Registrales</p>
+                            @Html.TextBoxFor(m => m.costesRegistrales)
+                        </div>
+                        <div class="form-mid-w3ls">
+                            <p>Tasacion</p>
+                            @Html.TextBoxFor(m => m.Tasacion)
+                        </div>
+                        <div class="form-mid-w3ls">
+                            <p>Comision Estudios</p>
+                            @Html.TextBoxFor(m => m.comEstudio)
+                        </div>
+                        <div class="form-mid-w3ls">
+                            <p>Comision Activacion</p>
+                            @Html.TextBoxFor(m => m.comActivacion)
+                        </div>
+                        <div class="form-mid-w3ls">
+                            <p>Comision Periodica</p>
+                            @Html.TextBoxFor(m => m.comPeriodica)
+                        </div>
+                        <div class="form-mid-w3ls">
+                            <p>Comision Por seguro riesgo</p>
+                            @Html.TextBoxFor(m => m.PorsegRiesgo)
+                        </div>
+                        <div class="form-mid-w3ls">
+                            <p>K.S</p>
+                            @Html.TextBoxFor(m => m.ks)
+                        </div>
+                        <div class="form-mid-w3ls">
+                            <p>Wacc</p>
+                            @Html.TextBoxFor(m => m.wacc)
+                        </div>
+                        <input type="submit" value="Actualizar" />
+
+                    </form>
+                }
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!--===============================================================================================-->
+    <script src="~/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script>
+		$('.js-pscroll').each(function(){
+			var ps = new PerfectScrollbar(this);
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+
+
+    </script>
+    <!--===============================================================================================-->
+    <script src="~/js/main.js"></script>
+
+</body>
+</html>

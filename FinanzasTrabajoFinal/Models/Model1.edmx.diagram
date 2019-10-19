@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8551cc28129845c49539127f42c04c2f" Name="Diagram1">
+        <EntityTypeShape EntityType="bdFinanzasModel.Administrador" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdFinanzasModel.Banco" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdFinanzasModel.Banco_Promocion" Width="1.5" PointX="7.5" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdFinanzasModel.carro" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdFinanzasModel.Cliente" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdFinanzasModel.Frecuencia" Width="1.5" PointX="8.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdFinanzasModel.leasing" Width="1.5" PointX="10.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdFinanzasModel.Marca" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdFinanzasModel.PlazoGracia" Width="1.5" PointX="7.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdFinanzasModel.Promocion" Width="1.5" PointX="5.25" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdFinanzasModel.Usuario" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdFinanzasModel.nameBanco" Width="1.5" PointX="0.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdFinanzasModel.vwCarro" Width="1.5" PointX="9.75" PointY="9.5" IsExpanded="true" />
+        <AssociationConnector Association="bdFinanzasModel.Administrador_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="bdFinanzasModel.Banco_Administrador" ManuallyRouted="false" />
+        <AssociationConnector Association="bdFinanzasModel.Banco_Promocion_Banco" ManuallyRouted="false" />
+        <AssociationConnector Association="bdFinanzasModel.leasing_Banco" ManuallyRouted="false" />
+        <AssociationConnector Association="bdFinanzasModel.Banco_Promocion_carro" ManuallyRouted="false" />
+        <AssociationConnector Association="bdFinanzasModel.Banco_Promocion_Promocion" ManuallyRouted="false" />
+        <AssociationConnector Association="bdFinanzasModel.carro_Marca" ManuallyRouted="false" />
+        <AssociationConnector Association="bdFinanzasModel.leasing_carro" ManuallyRouted="false" />
+        <AssociationConnector Association="bdFinanzasModel.Cliente_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="bdFinanzasModel.leasing_Frecuencia" ManuallyRouted="false" />
+        <AssociationConnector Association="bdFinanzasModel.leasing_Usuario" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

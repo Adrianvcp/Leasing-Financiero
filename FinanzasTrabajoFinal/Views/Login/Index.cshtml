@@ -1,0 +1,84 @@
+﻿@{ 
+    var tipo = 0; //0 = User; //1 = Admin
+    var estado = 0;  // 0 = Principal 2= loginCorrectoAdmin 1= loginCorectoUser
+    Session["userName"] = "";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Jitney Booking Form Responsive Widget, Audio and Video players, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+    <script>
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+
+    <!-- Meta tags -->
+    <!--stylesheets-->
+    <link href="~/css/style.css" rel='stylesheet' type='text/css' media="all">
+    
+    <!--//style sheet end here-->
+    <!-- Calendar -->
+    <link rel="stylesheet" href="~/css/jquery-ui.css" />
+    
+    <!-- //Calendar -->
+    <link href="~/css/wickedpicker.css" rel="stylesheet" type='text/css' media="all" />
+    
+    <!-- Time-script-CSS -->
+    <link href="//fonts.googleapis.com/css?family=Barlow:300,400,500" rel="stylesheet">
+</head>
+<body class="bodyLogin">
+
+    <h1 class="header-w3ls">
+        Log In
+    </h1>
+
+    @using (Html.BeginForm("Sesion","Login"))
+    {
+        <div class="container">
+            <div class="main-bothside">
+                <form action="#" method="post">
+                    <div>
+                        <div class="form-mid-w3ls">
+                            <p>Email</p>
+                            @Html.TextBox("email")
+                            @*<input type="email" placeholder="Email" required="">*@
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="form-mid-w3ls">
+                            <p>Password</p>
+                            @Html.Password("pass")
+                        </div>
+                    </div>
+                    <input type="submit" value="LogIn" />
+                </form>
+            </div>
+        </div>
+
+    }
+
+   
+
+    <!-- js -->
+    <script src='~/js/jquery-2.2.3.min.js'></script>
+    <!-- //js -->
+    <!-- Calendar -->
+    <script src="~/js/jquery-ui.js"></script>
+    <script>
+         $(function () {
+         	$("#datepicker,#datepicker1,#datepicker2,#datepicker3").datepicker();
+         });
+    </script>
+    <!-- //Calendar -->
+    <!-- Time -->
+    <script src="~/js/wickedpicker.js"></script>
+    <script>
+         $('.timepicker,.timepicker1').wickedpicker({ twentyFour: false });
+    </script>
+    <!-- //Time -->
+</body>
+</html>

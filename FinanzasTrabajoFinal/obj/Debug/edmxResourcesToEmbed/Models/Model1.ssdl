@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bdFinanzasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Administrador">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Banco">
+    <Key>
+      <PropertyRef Name="idBanco" />
+    </Key>
+    <Property Name="idBanco" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+    <Property Name="NombreBanco" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="TEA" Type="real" Nullable="false" />
+    <Property Name="SeguroRiesgo" Type="real" Nullable="false" />
+    <Property Name="PorRecompa" Type="real" Nullable="false" />
+    <Property Name="costesNotariales" Type="real" Nullable="false" />
+    <Property Name="costesRegistrales" Type="real" Nullable="false" />
+    <Property Name="Tasacion" Type="real" Nullable="false" />
+    <Property Name="comEstudio" Type="real" Nullable="false" />
+    <Property Name="comActivacion" Type="real" />
+    <Property Name="comPeriodica" Type="real" Nullable="false" />
+    <Property Name="PorsegRiesgo" Type="real" Nullable="false" />
+    <Property Name="ks" Type="real" Nullable="false" />
+    <Property Name="wacc" Type="real" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Banco_Promocion">
+    <Key>
+      <PropertyRef Name="Banco_idBanco" />
+      <PropertyRef Name="Promocion_idPromocion" />
+      <PropertyRef Name="carro_idCarro" />
+    </Key>
+    <Property Name="Banco_idBanco" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Promocion_idPromocion" Type="int" Nullable="false" />
+    <Property Name="carro_idCarro" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="carro">
+    <Key>
+      <PropertyRef Name="idCarro" />
+    </Key>
+    <Property Name="idCarro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NCarro" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="idMarca" Type="int" Nullable="false" />
+    <Property Name="Precio" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Frecuencia">
+    <Key>
+      <PropertyRef Name="idFrecuencia" />
+    </Key>
+    <Property Name="idFrecuencia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NNombre" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="cantidadDias" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="leasing">
+    <Key>
+      <PropertyRef Name="idLeasing" />
+    </Key>
+    <Property Name="idLeasing" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idCarro" Type="int" Nullable="false" />
+    <Property Name="idDNI" Type="int" Nullable="false" />
+    <Property Name="idBanco" Type="int" Nullable="false" />
+    <Property Name="NprevioVenta" Type="real" Nullable="false" />
+    <Property Name="NcuotaInical" Type="real" Nullable="false" />
+    <Property Name="NAnios" Type="int" Nullable="false" />
+    <Property Name="fechaInicio" Type="date" Nullable="false" />
+    <Property Name="idFrecuencia" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Marca">
+    <Key>
+      <PropertyRef Name="idMarca" />
+    </Key>
+    <Property Name="idMarca" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nMarca" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PlazoGracia">
+    <Key>
+      <PropertyRef Name="idPlazoGracia" />
+    </Key>
+    <Property Name="idPlazoGracia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NNombre" Type="varchar" MaxLength="25" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Promocion">
+    <Key>
+      <PropertyRef Name="idPromocion" />
+    </Key>
+    <Property Name="idPromocion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fechaInicio" Type="date" Nullable="false" />
+    <Property Name="fechaFin" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="idDNI" />
+    </Key>
+    <Property Name="idDNI" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="16" Nullable="false" />
+    <Property Name="NNombre" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="NApellido" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Ntipo" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'bdFinanzas.dbo.nameBanco' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="nameBanco">
+    <Key>
+      <PropertyRef Name="idBanco" />
+      <PropertyRef Name="idUsuario" />
+      <PropertyRef Name="NombreBanco" />
+      <PropertyRef Name="TEA" />
+      <PropertyRef Name="SeguroRiesgo" />
+      <PropertyRef Name="PorRecompa" />
+      <PropertyRef Name="costesNotariales" />
+      <PropertyRef Name="costesRegistrales" />
+      <PropertyRef Name="Tasacion" />
+      <PropertyRef Name="comEstudio" />
+      <PropertyRef Name="comPeriodica" />
+      <PropertyRef Name="PorsegRiesgo" />
+      <PropertyRef Name="ks" />
+      <PropertyRef Name="wacc" />
+    </Key>
+    <Property Name="idBanco" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+    <Property Name="NombreBanco" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="TEA" Type="real" Nullable="false" />
+    <Property Name="SeguroRiesgo" Type="real" Nullable="false" />
+    <Property Name="PorRecompa" Type="real" Nullable="false" />
+    <Property Name="costesNotariales" Type="real" Nullable="false" />
+    <Property Name="costesRegistrales" Type="real" Nullable="false" />
+    <Property Name="Tasacion" Type="real" Nullable="false" />
+    <Property Name="comEstudio" Type="real" Nullable="false" />
+    <Property Name="comActivacion" Type="real" />
+    <Property Name="comPeriodica" Type="real" Nullable="false" />
+    <Property Name="PorsegRiesgo" Type="real" Nullable="false" />
+    <Property Name="ks" Type="real" Nullable="false" />
+    <Property Name="wacc" Type="real" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'bdFinanzas.dbo.vwCarro' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="vwCarro">
+    <Key>
+      <PropertyRef Name="idCarro" />
+      <PropertyRef Name="NCarro" />
+      <PropertyRef Name="idMarca" />
+      <PropertyRef Name="Precio" />
+    </Key>
+    <Property Name="idCarro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NCarro" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="idMarca" Type="int" Nullable="false" />
+    <Property Name="Precio" Type="money" Nullable="false" />
+  </EntityType>
+  <Association Name="Administrador_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Administrador" Type="Self.Administrador" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idDNI" />
+      </Principal>
+      <Dependent Role="Administrador">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Banco_Administrador">
+    <End Role="Administrador" Type="Self.Administrador" Multiplicity="1" />
+    <End Role="Banco" Type="Self.Banco" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Administrador">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Banco">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Banco_Promocion_Banco">
+    <End Role="Banco" Type="Self.Banco" Multiplicity="1" />
+    <End Role="Banco_Promocion" Type="Self.Banco_Promocion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Banco">
+        <PropertyRef Name="idBanco" />
+      </Principal>
+      <Dependent Role="Banco_Promocion">
+        <PropertyRef Name="Banco_idBanco" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Banco_Promocion_carro">
+    <End Role="carro" Type="Self.carro" Multiplicity="1" />
+    <End Role="Banco_Promocion" Type="Self.Banco_Promocion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="carro">
+        <PropertyRef Name="idCarro" />
+      </Principal>
+      <Dependent Role="Banco_Promocion">
+        <PropertyRef Name="carro_idCarro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Banco_Promocion_Promocion">
+    <End Role="Promocion" Type="Self.Promocion" Multiplicity="1" />
+    <End Role="Banco_Promocion" Type="Self.Banco_Promocion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Promocion">
+        <PropertyRef Name="idPromocion" />
+      </Principal>
+      <Dependent Role="Banco_Promocion">
+        <PropertyRef Name="Promocion_idPromocion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="carro_Marca">
+    <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+    <End Role="carro" Type="Self.carro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Marca">
+        <PropertyRef Name="idMarca" />
+      </Principal>
+      <Dependent Role="carro">
+        <PropertyRef Name="idMarca" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Cliente_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idDNI" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="leasing_Banco">
+    <End Role="Banco" Type="Self.Banco" Multiplicity="1" />
+    <End Role="leasing" Type="Self.leasing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Banco">
+        <PropertyRef Name="idBanco" />
+      </Principal>
+      <Dependent Role="leasing">
+        <PropertyRef Name="idBanco" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="leasing_carro">
+    <End Role="carro" Type="Self.carro" Multiplicity="1" />
+    <End Role="leasing" Type="Self.leasing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="carro">
+        <PropertyRef Name="idCarro" />
+      </Principal>
+      <Dependent Role="leasing">
+        <PropertyRef Name="idCarro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="leasing_Frecuencia">
+    <End Role="Frecuencia" Type="Self.Frecuencia" Multiplicity="1" />
+    <End Role="leasing" Type="Self.leasing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Frecuencia">
+        <PropertyRef Name="idFrecuencia" />
+      </Principal>
+      <Dependent Role="leasing">
+        <PropertyRef Name="idFrecuencia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="leasing_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="leasing" Type="Self.leasing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idDNI" />
+      </Principal>
+      <Dependent Role="leasing">
+        <PropertyRef Name="idDNI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="bdFinanzasModelStoreContainer">
+    <EntitySet Name="Administrador" EntityType="Self.Administrador" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Banco" EntityType="Self.Banco" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Banco_Promocion" EntityType="Self.Banco_Promocion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="carro" EntityType="Self.carro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Frecuencia" EntityType="Self.Frecuencia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="leasing" EntityType="Self.leasing" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Marca" EntityType="Self.Marca" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PlazoGracia" EntityType="Self.PlazoGracia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Promocion" EntityType="Self.Promocion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="nameBanco" EntityType="Self.nameBanco" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [nameBanco].[idBanco] AS [idBanco], 
+    [nameBanco].[idUsuario] AS [idUsuario], 
+    [nameBanco].[NombreBanco] AS [NombreBanco], 
+    [nameBanco].[TEA] AS [TEA], 
+    [nameBanco].[SeguroRiesgo] AS [SeguroRiesgo], 
+    [nameBanco].[PorRecompa] AS [PorRecompa], 
+    [nameBanco].[costesNotariales] AS [costesNotariales], 
+    [nameBanco].[costesRegistrales] AS [costesRegistrales], 
+    [nameBanco].[Tasacion] AS [Tasacion], 
+    [nameBanco].[comEstudio] AS [comEstudio], 
+    [nameBanco].[comActivacion] AS [comActivacion], 
+    [nameBanco].[comPeriodica] AS [comPeriodica], 
+    [nameBanco].[PorsegRiesgo] AS [PorsegRiesgo], 
+    [nameBanco].[ks] AS [ks], 
+    [nameBanco].[wacc] AS [wacc]
+    FROM [dbo].[nameBanco] AS [nameBanco]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwCarro" EntityType="Self.vwCarro" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwCarro].[idCarro] AS [idCarro], 
+    [vwCarro].[NCarro] AS [NCarro], 
+    [vwCarro].[idMarca] AS [idMarca], 
+    [vwCarro].[Precio] AS [Precio]
+    FROM [dbo].[vwCarro] AS [vwCarro]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="Administrador_Usuario" Association="Self.Administrador_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Administrador" EntitySet="Administrador" />
+    </AssociationSet>
+    <AssociationSet Name="Banco_Administrador" Association="Self.Banco_Administrador">
+      <End Role="Administrador" EntitySet="Administrador" />
+      <End Role="Banco" EntitySet="Banco" />
+    </AssociationSet>
+    <AssociationSet Name="Banco_Promocion_Banco" Association="Self.Banco_Promocion_Banco">
+      <End Role="Banco" EntitySet="Banco" />
+      <End Role="Banco_Promocion" EntitySet="Banco_Promocion" />
+    </AssociationSet>
+    <AssociationSet Name="Banco_Promocion_carro" Association="Self.Banco_Promocion_carro">
+      <End Role="carro" EntitySet="carro" />
+      <End Role="Banco_Promocion" EntitySet="Banco_Promocion" />
+    </AssociationSet>
+    <AssociationSet Name="Banco_Promocion_Promocion" Association="Self.Banco_Promocion_Promocion">
+      <End Role="Promocion" EntitySet="Promocion" />
+      <End Role="Banco_Promocion" EntitySet="Banco_Promocion" />
+    </AssociationSet>
+    <AssociationSet Name="carro_Marca" Association="Self.carro_Marca">
+      <End Role="Marca" EntitySet="Marca" />
+      <End Role="carro" EntitySet="carro" />
+    </AssociationSet>
+    <AssociationSet Name="Cliente_Usuario" Association="Self.Cliente_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="leasing_Banco" Association="Self.leasing_Banco">
+      <End Role="Banco" EntitySet="Banco" />
+      <End Role="leasing" EntitySet="leasing" />
+    </AssociationSet>
+    <AssociationSet Name="leasing_carro" Association="Self.leasing_carro">
+      <End Role="carro" EntitySet="carro" />
+      <End Role="leasing" EntitySet="leasing" />
+    </AssociationSet>
+    <AssociationSet Name="leasing_Frecuencia" Association="Self.leasing_Frecuencia">
+      <End Role="Frecuencia" EntitySet="Frecuencia" />
+      <End Role="leasing" EntitySet="leasing" />
+    </AssociationSet>
+    <AssociationSet Name="leasing_Usuario" Association="Self.leasing_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="leasing" EntitySet="leasing" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

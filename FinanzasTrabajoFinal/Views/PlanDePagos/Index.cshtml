@@ -1,0 +1,600 @@
+﻿@{
+
+    double[] arrayFB = new double[100];
+    double[] arrayFN = new double[100];
+    List<double> listaFB = new List<double>();
+    var datos = (FinanzasTrabajoFinal.Models.leasing)Session["datosPlanPago"];
+    var cantidCuotas = (360 / datos.Frecuencia.cantidadDias) * datos.NAnios;
+    Session["frecuencia"] = cantidCuotas;
+    var a = datos.Banco.TEA / 100 + 1;
+    var frecuenciaDias = datos.Frecuencia.cantidadDias;
+    Session["frDias"] = frecuenciaDias;
+    var aux = (Double)Math.Pow(a, ((Double)frecuenciaDias / (Double)360));
+    var tep = (aux - 1) * 100;
+    var tepnor = aux - 1;
+
+    var cantCuotaPG = (Int32)Session["plazoGracia"];
+    var tipoPG = (String)Session["tipoGracia"];
+
+    var sumIntereses = 0.0;
+    var sumAmor = 0.0;
+
+    var SaldoInicial = datos.NprevioVenta - (datos.NprevioVenta * (datos.NcuotaInical / (Double)100));
+    var au = Math.Pow(1 + tepnor, 8);
+    var div = ((Double)(tepnor * Math.Pow(1 + tepnor, 8)) / (Double)(Math.Pow(1 + tepnor, 8) - 1));
+    var cuota = 0.0;
+    var interes = 0.0;
+    var amor = 0.0;
+    double sfinal;
+    bool auxEntro = false;
+    var sgRiesgo = ((datos.Banco.PorsegRiesgo/100) * datos.NprevioVenta)/12;
+    var comision = datos.Banco.comPeriodica;
+
+    
+    var depreciacion = 0.0;
+    var ahorroTri = 0.0;
+    var igv = (datos.NprevioVenta / (1 + 0.18)) * 0.18;
+    var fB = 0.0;
+    var fIGV = 0.0;
+    var FNeto = 0.0;
+    var contadoInteres = 0.0;
+    var valorVenta = datos.NprevioVenta - igv;
+
+    var montoLeasing = 0.0;
+
+    if (datos.Banco.comActivacion == null)
+    {
+        montoLeasing = valorVenta + (datos.Banco.costesNotariales + datos.Banco.costesRegistrales + datos.Banco.Tasacion + datos.Banco.comEstudio);
+
+    }
+    else
+    {
+        montoLeasing = valorVenta + (Double)(datos.Banco.costesNotariales + datos.Banco.costesRegistrales + datos.Banco.Tasacion + datos.Banco.comEstudio + datos.Banco.comActivacion);
+    }
+    arrayFB[0] = montoLeasing*-1;
+    var porTEP = datos.Banco.TEA;
+    var Recompra = (datos.Banco.PorRecompa / 100) * valorVenta;
+    var porcentajeRiesgo = datos.Banco.PorsegRiesgo / 100;
+    var impRenta = 0.30;
+    var tir = 0.0;
+
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table V04</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/table/util.css">
+    <link rel="stylesheet" type="text/css" href="~/css/table/main.css">
+    <!--===============================================================================================-->
+
+</head>
+<body class="tm-dark-bg">
+    
+
+        <div class="tm-dark-bg">
+            <div class="container">
+                <div class="main-bothside">
+                    <form action="#" method="post">
+                        <div><div class="form-mid-w3ls"><p>I.G.V: @igv</p> </div></div>
+
+                        <div><div class="form-mid-w3ls"><p>Valor Venta: @valorVenta</p> </div></div>
+                        <div><div class="form-mid-w3ls"><p>Monto Leasing: @montoLeasing</p> </div></div>
+                        <div><div class="form-mid-w3ls"><p>% TEP: @tep %</p> </div></div>
+                        <div><div class="form-mid-w3ls"><p>N Cuotas Año:  12</p> </div></div>
+                        <div><div class="form-mid-w3ls"><p>N Total Venta:  @cantidCuotas</p> </div></div>
+
+
+                        <div><div class="form-mid-w3ls"><p>Seguro Riesgo: @sgRiesgo</p></div></div>
+                        
+                        <div><div class="form-mid-w3ls"><p>Segu. contra todo Riesgo: @(sgRiesgo * cantidCuotas)</p> </div></div>
+                        <div><div class="form-mid-w3ls"><p>Com. Periodicas:  @(comision * cantidCuotas)</p> </div></div>
+                        <div><div class="form-mid-w3ls"><p>Recompra:  @Recompra</p> </div></div>
+
+                        <div><div class="form-mid-w3ls"><p>Desembolso Total: @(Recompra + (sgRiesgo * cantidCuotas) + (comision * cantidCuotas))</p> </div></div>
+                        @*<div><div class="form-mid-w3ls"><p>TCEA Flujo Bruto:</p> </div></div>
+                        <div><div class="form-mid-w3ls"><p>TCEA Flujo Neto:</p> </div></div>
+                        <div><div class="form-mid-w3ls"><p>VAN Flujo Bruto:</p> </div></div>
+                        <div><div class="form-mid-w3ls"><p>VAN Flujo Neto:</p> </div></div>*@
+
+                    </form>
+                </div>
+            </div>
+
+                <div class="container-table100">
+                    <div class="wrap-table100">
+
+
+                        <div class="table100 ver3 m-b-110">
+                                                        <div class="table100-head">
+            <table>
+                <thead>
+                    <tr class="row100 head">
+                        <th class="cell100 column1">N°</th>
+                        <th class="cell100 column2">Plazo</th>
+                        <th class="cell100 column3">Saldo Ini.</th>-
+                        <th class="cell100 column4">Interes</th>
+                        <th class="cell100 column5">Cuota</th>
+                        <th class="cell100 column6">Amortiza.</th>
+                        <th class="cell100 column7">Seguro Riesgo</th>
+                        <th class="cell100 column8">Comision</th>
+                        <th class="cell100 column9">Recompra</th>-
+                        <th class="cell100 column10">Saldo F.</th>
+                        <th class="cell100 column11">Depre.</th>
+                        <th class="cell100 column12">Ahorro Tri.</th>
+                        <th class="cell100 column13">IGV</th>
+                        <th class="cell100 column14">Flujo B.</th>
+                        <th class="cell100 column15">Flujo I.</th>
+                        <th class="cell100 column16">Flujo N.</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+                            <div class="table100-body js-pscroll">
+                                <table>
+                                    <tbody class="form-mid-w3ls">
+
+                                        @{
+                                            if (tipoPG != "3")
+                                            {
+                                                if (cantCuotaPG != 0)
+                                                {
+                                                    //tipoPG : 1= Total 2= 3=
+                                                    if (tipoPG == "1")
+                                                    {
+                                                        //TOTAL
+                                                        for (int i = 1; i < cantCuotaPG + 1; i++)
+                                                        {
+                                                            <tr class="row100 body">
+                                                                <td class="cell100 column1">@i</td>
+
+
+                                                                <td class="cell100 column2 form-mid-w3ls">
+                                                                    <select id="PlazoGracia">
+                                                                        <option value="3">Total</option>
+                                                                    </select>
+                                                                </td>
+
+                                                                <td class="cell100 column3">@String.Format("{0:n}", (montoLeasing = montoLeasing + interes))</td>
+                                                                <td class="cell100 column4">@String.Format("{0:n}", (interes = (Double)tepnor * (Double)montoLeasing))</td>
+                                                                <td class="cell100 column5">@String.Format("{0:n}", cuota = 0)</td>
+                                                                <td class="cell100 column6">@String.Format("{0:n}", (amor = 0))</td>
+                                                                <td class="cell100 column7">@String.Format("{0:n}", (sgRiesgo))</td>
+                                                                <td class="cell100 column8">
+                                                                    @String.Format("{0:n}", (comision))
+                                                                </td>
+                                                                @if (i == cantidCuotas)
+                                                                {
+                                                                    <td class="cell100 column9">
+                                                                        @String.Format("{0:n}", (Recompra = (datos.Banco.PorRecompa / 100) * valorVenta))
+                                                                    </td>
+                                                                }
+                                                                else
+                                                                {
+                                                                    <td class="cell100 column9">
+                                                                        @String.Format("{0:n}", (Recompra = 0))
+                                                                    </td>
+                                                                }
+                                                                
+                                                                <td class="cell100 column10">
+                                                                    @String.Format("{0:n}", (sfinal = montoLeasing + interes))
+                                                                </td>
+                                                                <td class="cell100 column11">
+                                                                    @String.Format("{0:n}", (depreciacion = valorVenta / cantidCuotas))
+                                                                </td>
+                                                                <td class="cell100 column12">
+                                                                    @String.Format("{0:n}", (ahorroTri = (interes + sgRiesgo + comision + depreciacion) * impRenta))
+                                                                </td>
+                                                                @if (i == 1)
+                                                                {
+                                                                    <td class="cell100 column13">
+                                                                        @String.Format("{0:n}", (igv = (cuota + sgRiesgo + comision + Recompra) * 0.18))
+                                                                    </td>
+                                                                }
+                                                                else
+                                                                {
+                                                                    <td class="cell100 column9">
+                                                                        @String.Format("{0:n}", (igv))
+                                                                    </td>
+                                                                }
+                                                                
+                                                                <td class="cell100 column14">
+                                                                    @String.Format("{0:n}", (fB = cuota + sgRiesgo + comision + Recompra))
+                                                                    @{
+                                                                        arrayFB[i] = fB;
+                                                                        Session["DatosPlanPago"] = arrayFB;
+                                                                    }
+                                                                    @*@(Session["DatosPlanPago"] = arrayFB)*@
+                                                                </td>
+                                                                <td class="cell100 column15">
+                                                                    @String.Format("{0:n}", (fIGV = igv + fB))
+                                                                </td>
+                                                                <td class="cell100 column16">
+                                                                    @String.Format("{0:n}", (FNeto = ahorroTri - fB))
+                                                                    @{
+                                                                        arrayFN[i] = FNeto*-1;
+                                                                        Session["DatosFlujoNeto"] = arrayFN;
+                                                                    }
+                                                                </td>
+                                                            </tr>
+                                                            
+                                                        }
+                                                        sfinal = montoLeasing + interes;
+                                                        @(cuota = (sfinal * (((Double)(tepnor * Math.Pow(1 + tepnor, cantidCuotas- (cantCuotaPG+1) + 1)) / (Double)(Math.Pow(1 + tepnor, cantidCuotas -(cantCuotaPG + 1) + 1) - 1)))))
+                                                        for (int i = cantCuotaPG + 1; i < cantidCuotas+1; i++)
+                                                        {
+                                                            <tr class="row100 body">
+                                                                <td class="cell100 column1">@i</td>
+
+                                                                <td class="cell100 column2 form-mid-w3ls">
+                                                                    <select id="PlazoGracia">
+                                                                        <option value="1">Sin Plazo</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td class="cell100 column3">@String.Format("{0:n}", (montoLeasing = sfinal))</td>
+                                                                <td class="cell100 column4">@String.Format("{0:n}", (interes = tepnor * montoLeasing))</td>
+                                                                <td class="cell100 column5">@String.Format("{0:n}", cuota)</td>
+                                                                <td class="cell100 column6">@String.Format("{0:n}", (amor = cuota - interes))</td>
+                                                                @*<td class="cell100 column8">@String.Format("{0:n}", (amor = cuota - interes))</td>*@
+                                                                <td class="cell100 column7">@String.Format("{0:n}", (sgRiesgo))</td>
+
+                                                                <td class="cell100 column8">
+                                                                    @String.Format("{0:n}", (comision))
+                                                                </td>
+                                                                @if (i == cantidCuotas)
+                                                                {
+                                                                    <td class="cell100 column9">
+                                                                        @String.Format("{0:n}", (Recompra = (datos.Banco.PorRecompa / 100) * valorVenta))
+                                                                    </td>
+                                                                }
+                                                                else
+                                                                {
+                                                                    <td class="cell100 column9">
+                                                                        @String.Format("{0:n}", (Recompra =0))
+                                                                    </td>
+                                                                }
+                                                                <td class="cell100 column10">
+                                                                    @String.Format("{0:n}", (sfinal = montoLeasing - amor))
+                                                                </td>
+                                                                <td class="cell100 column11">
+                                                                    @String.Format("{0:n}", (depreciacion = valorVenta / cantidCuotas))
+                                                                </td>
+                                                                <td class="cell100 column12">
+                                                                    @String.Format("{0:n}", (ahorroTri = (interes + sgRiesgo + comision + depreciacion) * impRenta))
+                                                                </td>
+                                                                @if (i == 1)
+                                                                {
+                                                                    <td class="cell100 column13">
+                                                                        @String.Format("{0:n}", (igv = (cuota + sgRiesgo + comision + Recompra) * 0.18))
+                                                                    </td>
+                                                                }
+                                                                else
+                                                                {
+                                                                    <td class="cell100 column9">
+                                                                        @String.Format("{0:n}", (igv))
+                                                                    </td>
+                                                                }
+                                                                    <td class="cell100 column14">
+                                                                        @String.Format("{0:n}", (fB = cuota + sgRiesgo + comision + Recompra))
+                                                                        @{
+                                                                            arrayFB[i] = fB;
+                                                                            Session["DatosPlanPago"] = arrayFB;
+                                                                        }
+                                                                    </td>
+                                                                <td class="cell100 column15">
+                                                                    @String.Format("{0:n}", (fIGV = igv + fB))
+                                                                </td>
+                                                                <td class="cell100 column16">
+                                                                    @String.Format("{0:n}", (FNeto = (ahorroTri - fB)*-1))
+                                                                    @{
+                                                                        arrayFN[i] = FNeto;
+                                                                        Session["DatosFlujoNeto"] = arrayFN;
+                                                                    }
+                                                                </td>
+
+
+
+                                                            </tr>
+                                                            
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        //PARCIAL
+                                                        for (int i = 1; i < cantCuotaPG + 1; i++)
+                                                        {
+                                                            <tr class="row100 body">
+                                                                <td class="cell100 column1">@i</td>
+
+                                                                <td class="cell100 column2 form-mid-w3ls">
+                                                                    <select id="PlazoGracia">
+                                                                        <option value="2">Parcial</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td class="cell100 column3">@String.Format("{0:n}", (montoLeasing))</td>
+                                                                <td class="cell100 column4">@String.Format("{0:n}", (interes = (Double)tepnor * (Double)montoLeasing))</td>
+                                                                
+                                                                <td class="cell100 column5">@String.Format("{0:n}", cuota = interes)</td>
+                                                                <td class="cell100 column6">@String.Format("{0:n}", (amor = 0))</td>
+                                                                <td class="cell100 column7">@String.Format("{0:n}", (sgRiesgo))</td>
+                                                                <td class="cell100 column8">
+                                                                    @String.Format("{0:n}", (comision))
+                                                                </td>
+                                                                @if (i == cantidCuotas)
+                                                                {
+                                                                    <td class="cell100 column9">
+                                                                        @String.Format("{0:n}", (Recompra = (datos.Banco.PorRecompa / 100) * valorVenta))
+                                                                    </td>
+                                                                }
+                                                                else
+                                                                {
+                                                                    <td class="cell100 column9">
+                                                                        @String.Format("{0:n}", (Recompra = 0))
+                                                                    </td>
+                                                                }
+                                                                <td class="cell100 column10">
+                                                                    @String.Format("{0:n}", (sfinal = montoLeasing))
+                                                                </td>
+                                                                <td class="cell100 column11">
+                                                                    @String.Format("{0:n}", (depreciacion = valorVenta / cantidCuotas))
+                                                                </td>
+                                                                <td class="cell100 column12">
+                                                                    @String.Format("{0:n}", (ahorroTri = (interes + sgRiesgo + comision + depreciacion) * impRenta))
+                                                                </td>
+                                                                @if (i == 1)
+                                                                {
+                                                                    <td class="cell100 column13">
+                                                                        @String.Format("{0:n}", (igv = (cuota + sgRiesgo + comision + Recompra) * 0.18))
+                                                                    </td>
+                                                                }
+                                                                else
+                                                                {
+                                                                    <td class="cell100 column9">
+                                                                        @String.Format("{0:n}", (igv))
+                                                                    </td>
+                                                                }
+                                                                    <td class="cell100 column14">
+                                                                        @String.Format("{0:n}", (fB = cuota + sgRiesgo + comision + Recompra))
+                                                                        @{
+                                                                            arrayFB[i] = fB;
+                                                                            Session["DatosPlanPago"] = arrayFB;
+                                                                        }
+                                                                    </td>
+                                                                <td class="cell100 column15">
+                                                                    @String.Format("{0:n}", (fIGV = igv + fB))
+                                                                </td>
+                                                                <td class="cell100 column16">
+                                                                    @String.Format("{0:n}", (FNeto = (ahorroTri - fB)*-1))
+                                                                    @{
+                                                                        arrayFN[i] = FNeto * -1;
+                                                                        Session["DatosFlujoNeto"] = arrayFN;
+                                                                    }
+                                                                </td>
+
+                                                            </tr>
+                                                            @*@(sumAmor = sumAmor + amor)
+                                                            @( sumIntereses = sumIntereses + interes)*@
+                                                        }
+                                                        sfinal = montoLeasing;
+                                                        @(cuota = (sfinal * (((Double)(tepnor * Math.Pow(1 + tepnor, cantidCuotas - (cantCuotaPG + 1) + 1)) / (Double)(Math.Pow(1 + tepnor, cantidCuotas - (cantCuotaPG + 1) + 1) - 1)))))
+                                                        for (int i = cantCuotaPG + 1; i < cantidCuotas + 1; i++)
+                                                        {
+                                                            <tr class="row100 body">
+                                                                <td class="cell100 column1">@i</td>
+
+                                                                <td class="cell100 column2 form-mid-w3ls">
+                                                                    <select id="PlazoGracia">
+                                                                        <option value="1">Sin Plazo</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td class="cell100 column3">@String.Format("{0:n}", (montoLeasing = sfinal))</td>
+                                                                <td class="cell100 column4">@String.Format("{0:n}", (interes = tepnor * montoLeasing))</td>
+                                                                <td class="cell100 column5">@String.Format("{0:n}", cuota)</td>
+                                                                <td class="cell100 column6">@String.Format("{0:n}", (amor = cuota - interes))</td>
+                                                                @*<td class="cell100 column8">@String.Format("{0:n}", (amor = cuota - interes))</td>*@
+                                                                <td class="cell100 column7">@String.Format("{0:n}", (sgRiesgo))</td>
+
+                                                                <td class="cell100 column8">
+                                                                    @String.Format("{0:n}", (comision))
+                                                                </td>
+                                                                @if (i == cantidCuotas)
+                                                                {
+                                                                    <td class="cell100 column9">
+                                                                        @String.Format("{0:n}", (Recompra = (datos.Banco.PorRecompa / 100) * valorVenta))
+                                                                    </td>
+                                                                }
+                                                                else
+                                                                {
+                                                                    <td class="cell100 column9">
+                                                                        @String.Format("{0:n}", (Recompra = 0))
+                                                                    </td>
+                                                                }
+                                                                <td class="cell100 column10">
+                                                                    @String.Format("{0:n}", (sfinal = montoLeasing - amor))
+                                                                </td>
+                                                                <td class="cell100 column11">
+                                                                    @String.Format("{0:n}", (depreciacion = valorVenta / cantidCuotas))
+                                                                </td>
+                                                                <td class="cell100 column12">
+                                                                    @String.Format("{0:n}", (ahorroTri = (interes + sgRiesgo + comision + depreciacion) * impRenta))
+                                                                </td>
+                                                                @if (i == 1)
+                                                                {
+                                                                    <td class="cell100 column13">
+                                                                        @String.Format("{0:n}", (igv = (cuota + sgRiesgo + comision + Recompra) * 0.18))
+                                                                    </td>
+                                                                }
+                                                                else
+                                                                {
+                                                                    <td class="cell100 column9">
+                                                                        @String.Format("{0:n}", (igv))
+                                                                    </td>
+                                                                }
+                                                                    <td class="cell100 column14">
+                                                                        @String.Format("{0:n}", (fB = cuota + sgRiesgo + comision + Recompra))
+                                                                        @{
+                                                                            arrayFB[i] = fB;
+                                                                            Session["DatosPlanPago"] = arrayFB;
+                                                                        }
+                                                                    </td>
+                                                                <td class="cell100 column15">
+                                                                    @String.Format("{0:n}", (fIGV = igv + fB))
+                                                                </td>
+                                                                <td class="cell100 column16">
+                                                                    @String.Format("{0:n}", (FNeto = (ahorroTri - fB)*-1))
+                                                                    @{
+                                                                        arrayFN[i] = FNeto;
+                                                                        Session["DatosFlujoNeto"] = arrayFN;
+                                                                    }
+                                                                </td>
+
+
+
+                                                            </tr>
+                                                            
+                                                        }
+
+                                                    }
+                                                }
+                                            }
+                                            else
+                                            {
+                                                @(cuota = (montoLeasing * (((Double)(tepnor * Math.Pow(1 + tepnor, cantidCuotas)) / (Double)(Math.Pow(1 + tepnor, cantidCuotas) - 1)))))
+                                                for (int i = 1; i < cantidCuotas+1; i++)
+                                                {
+                                                        <tr class="row100 body">
+                                                            <td class="cell100 column1">@i</td>
+
+                                                            <td class="cell100 column2 form-mid-w3ls">
+                                                                <select id="PlazoGracia">
+                                                                    <option value="1">Sin Plazo</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="cell100 column3">@String.Format("{0:n}", (montoLeasing = montoLeasing - amor))</td>
+                                                            <td class="cell100 column4">@String.Format("{0:n}", (interes = tepnor * montoLeasing))</td>
+                                                            <td class="cell100 column5">@String.Format("{0:n}", (cuota))</td>
+                                                            <td class="cell100 column6">@String.Format("{0:n}", (amor = cuota - interes))</td>
+                                                            <td class="cell100 column7">@String.Format("{0:n}", (sgRiesgo))</td>
+
+                                                            <td class="cell100 column8">
+                                                                @String.Format("{0:n}", (comision))
+                                                            </td>
+                                                            @if (i == cantidCuotas)
+                                                            {
+                                                                <td class="cell100 column9">
+                                                                    @String.Format("{0:n}", (Recompra = (datos.Banco.PorRecompa / 100) * valorVenta))
+                                                                </td>
+                                                            }
+                                                            else
+                                                            {
+                                                                <td class="cell100 column9">
+                                                                    @String.Format("{0:n}", (Recompra = 0))
+                                                                </td>
+                                                            }
+                                                            <td class="cell100 column10">
+                                                                @String.Format("{0:n}", (sfinal = montoLeasing - amor))
+                                                            </td>
+                                                            <td class="cell100 column11">
+                                                                @String.Format("{0:n}", (depreciacion = valorVenta / cantidCuotas))
+                                                            </td>
+                                                            <td class="cell100 column12">
+                                                                @String.Format("{0:n}", (ahorroTri = (interes + sgRiesgo + comision + depreciacion) * impRenta))
+                                                            </td>
+                                                            @if (i == 1)
+                                                            {
+                                                                <td class="cell100 column13">
+                                                                    @String.Format("{0:n}", (igv = (cuota + sgRiesgo + comision + Recompra) * 0.18))
+                                                                </td>
+                                                            }
+                                                            else
+                                                            {
+                                                                <td class="cell100 column9">
+                                                                    @String.Format("{0:n}", (igv))
+                                                                </td>
+                                                            }
+                                                                <td class="cell100 column14">
+                                                                    @String.Format("{0:n}", (fB = cuota + sgRiesgo + comision + Recompra))
+                                                                    @{
+                                                                        arrayFB[i] = fB;
+                                                                        Session["DatosPlanPago"] = arrayFB;
+                                                                    }
+                                                                </td>
+                                                            <td class="cell100 column15">
+                                                                @String.Format("{0:n}", (fIGV = igv + fB))
+                                                            </td>
+                                                            <td class="cell100 column16">
+                                                                @String.Format("{0:n}", (FNeto = (ahorroTri- fB)*-1))
+                                                                @{
+                                                                    arrayFN[i] = FNeto;
+                                                                    Session["DatosFlujoNeto"] = arrayFN;
+                                                                }
+                                                            </td>
+
+                                                        </tr>
+                                                        @*@(sumAmor = sumAmor + amor)
+                                                        @( sumIntereses = sumIntereses + interes)*@
+                                                }
+                                            }
+
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            @using (Html.BeginForm("Index","Resultados"))
+                            {
+                                <input type="submit" value="Resultados" />
+                            }
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+    <!--===============================================================================================-->
+    <script src="~/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script>
+		$('.js-pscroll').each(function(){
+			var ps = new PerfectScrollbar(this);
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+
+
+    </script>
+    <!--===============================================================================================-->
+    <script src="~/js/main.js"></script>
+
+</body>
+</html>

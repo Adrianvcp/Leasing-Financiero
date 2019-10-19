@@ -1,0 +1,81 @@
+﻿@model IEnumerable<FinanzasTrabajoFinal.Models.Marca>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="~/css/style.css" rel='stylesheet' type='text/css' media="all">
+
+</head>
+<body class="fondo-negro">
+
+    <h1 class="header-w3ls">
+        Crear Carro
+    </h1>z
+
+    @using (Html.BeginForm("CreateM", "Carros"))
+    {
+        <div class="container">
+            <div class="main-bothside">
+                <form action="#" method="post">
+                    <link href="~/css/jquery-ui.css" rel="stylesheet" />
+
+
+                    <div>
+                        <div class="form-mid-w3ls">
+                            <p>Marca</p>
+                            @Html.TextBox("marca", "", new { @placeholder = "Marca" })
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Agregar Marca" />
+                </form>
+            </div>
+        </div>
+    }
+
+
+    <script>
+        $("#number").on({
+            "focus": function (event) {
+                $(event.target).select();
+            },
+            "keyup": function (event) {
+                $(event.target).val(function (index, value) {
+                    return value.replace(/\D/g, "")
+                                .replace(/([0-9])([0-9]{2})$/, '$1.$2')
+                                .replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ",");
+                });
+            }
+        });
+    </script>
+
+    <script>
+        $("#number").on({
+            "focus": function (event) {
+                $(event.target).select();
+            },
+            "keyup": function (event) {
+                $(event.target).val(function (index, value) {
+                    return value.replace(/\D/g, "")
+                                .replace(/([0-9])([0-9]{2})$/, '$1.$2')
+                                .replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ",");
+                });
+            }
+        });
+    </script>
+
+    <script>
+        function vamoMierda () {
+            document.getElementById("demo").innerHTML = "Hello World";
+            }
+    </script>
+
+
+
+
+</body>
+</html>
